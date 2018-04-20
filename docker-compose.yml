@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  nhdc-online:
+    image: nhdc-online
+    build:
+      context: .
+      dockerfile: NhdcOnline/Dockerfile
