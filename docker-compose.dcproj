@@ -3,7 +3,7 @@
   <PropertyGroup Label="Globals">
     <ProjectVersion>2.1</ProjectVersion>
     <DockerTargetOS>Linux</DockerTargetOS>
-    <ProjectGuid>{CD0F3A8C-E1A3-441F-A9C7-D5F9C13C1300}</ProjectGuid>
+    <ProjectGuid>{3055643F-8142-4CC0-A78C-B1104C98219D}</ProjectGuid>
     <DockerLaunchBrowser>True</DockerLaunchBrowser>
     <DockerServiceUrl>http://localhost:{ServicePort}</DockerServiceUrl>
     <DockerServiceName>nhdc-online</DockerServiceName>

@@ -10,9 +10,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/NhdcOnline/bin/Debug/netcoreapp2.0/NhdcOnline.dll",
+            "program": "${workspaceFolder}/src/NhdcOnline/bin/Debug/netcoreapp2.0/NhdcOnline.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/NhdcOnline",
+            "cwd": "${workspaceFolder}/src/NhdcOnline",
             "stopAtEntry": false,
             "internalConsoleOptions": "openOnSessionStart",
             "launchBrowser": {
@@ -33,7 +33,7 @@
                 "ASPNETCORE_ENVIRONMENT": "Development"
             },
             "sourceFileMap": {
-                "/Views": "${workspaceFolder}/Views"
+                "/Views": "${workspaceFolder}/src/NhdcOnline/Views"
             }
         },
         {
