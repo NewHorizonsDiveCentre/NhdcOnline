@@ -7,15 +7,11 @@
 
   <Target Name="Bundle" BeforeTargets="Build">
       <Exec Command="yarn install" WorkingDirectory="$(ProjectDir)" />
-      <Exec Command="dotnet bundle" WorkingDirectory="$(ProjectDir)" />
   </Target>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <DotNetCliToolReference Include="BundlerMinifier.Core" Version="2.8.391" />
+    <PackageReference Include="BuildBundlerMinifier" Version="2.8.391" />
   </ItemGroup>
 
 </Project>
