@@ -5,13 +5,8 @@
     <DockerComposeProjectPath>../../docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 
-  <Target Name="Bundle" BeforeTargets="Build">
-      <Exec Command="yarn install" WorkingDirectory="$(ProjectDir)" />
-  </Target>
-
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
-    <PackageReference Include="BuildBundlerMinifier" Version="2.8.391" />
   </ItemGroup>
 
 </Project>

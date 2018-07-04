@@ -5,4 +5,4 @@ services:
     image: nhdc-online
     build:
       context: .
-      dockerfile: src/NhdcOnline/Dockerfile
+      dockerfile: src/server/Dockerfile

@@ -1,7 +1,7 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NhdcOnline", "src\NhdcOnline\NhdcOnline.csproj", "{3E7F1423-52BC-4E43-9323-9AA8A3983A72}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NhdcOnline", "src\server\NhdcOnline.csproj", "{3E7F1423-52BC-4E43-9323-9AA8A3983A72}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{3055643F-8142-4CC0-A78C-B1104C98219D}"
 EndProject
