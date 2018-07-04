@@ -5,7 +5,7 @@
 // > and we need static names to set up the Razor layout
 // index.html generation is also disabled
 // > Again, ASP.Net Core will handle this for us
-// > only disable on production, to allow local dev debugging
+// > only enable on development, to allow local dev debugging
 
 module.exports = {
   chainWebpack: config => {
