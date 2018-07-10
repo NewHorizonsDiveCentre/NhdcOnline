@@ -4,5 +4,6 @@ services:
   nhdc-online:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
+      - NODE_ENV=development
     ports:
       - "80"

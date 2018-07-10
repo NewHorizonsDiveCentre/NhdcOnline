@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+  nhdc-online:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Staging
+      - NODE_ENV=staging
+    ports:
+      - "80"

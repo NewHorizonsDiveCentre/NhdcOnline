@@ -2,7 +2,9 @@ version: '3.4'
 
 services:
   nhdc-online:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - NODE_ENV=production
     image: nhdc-online
     build:
       context: .
-      dockerfile: src/server/Dockerfile
