@@ -1,15 +1,22 @@
 {
-    "version": "2.0.0",
-    "tasks": [
-        {
-            "label": "build",
-            "command": "dotnet",
-            "type": "process",
-            "args": [
-                "build",
-                "${workspaceFolder}/src/NhdcOnline/NhdcOnline.csproj"
-            ],
-            "problemMatcher": "$msCompile"
-        }
-    ]
+  "version": "2.0.0",
+  "tasks": [{
+    "label": "build",
+    "command": "dotnet",
+    "type": "process",
+    "args": [
+      "build",
+      "${workspaceFolder}/src/NhdcOnline/NhdcOnline.csproj"
+    ],
+    "problemMatcher": "$msCompile"
+  }, {
+    "label": "yarn serve",
+    "type": "shell",
+    "command": "yarn serve",
+    "isBackground": true,
+    "problemMatcher": [],
+    "options": {
+      "cwd": "${workspaceFolder}/src/client"
+    }
+  }]
 }
