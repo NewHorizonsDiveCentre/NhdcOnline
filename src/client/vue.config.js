@@ -22,6 +22,10 @@ module.exports = {
       config.plugins.delete('html');
       config.plugins.delete('preload');
       config.plugins.delete('prefetch');
+    } else {
+      config.plugin('html').tap((() => [{
+        template: path.resolve('html/index.html')
+      }]));
     }
   },
   configureWebpack: {
