@@ -14,14 +14,14 @@ body {
     -moz-osx-font-smoothing: grayscale;
     color: color(text);
     font: {
-        style: font(text);
+        family: font(text);
     }
 }
 
 @include headings() {
     color: color(header);
     font: {
-        style: font(header);
+        family: font(header);
     }
 }
 
