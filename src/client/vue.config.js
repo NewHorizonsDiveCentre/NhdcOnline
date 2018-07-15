@@ -1,4 +1,5 @@
 // Vue.js config
+const path = require('path');
 
 // CSS & JS files are outputted without chunk hashes
 // > ASP.Net Core adds version hashes anyway, so they're not needed,
@@ -24,7 +25,7 @@ module.exports = {
       config.plugins.delete('prefetch');
     } else {
       config.plugin('html').tap((() => [{
-        template: path.resolve('html/index.html')
+        template: path.resolve(__dirname, 'html/index.html')
       }]));
     }
   },
@@ -33,6 +34,11 @@ module.exports = {
       // JS renaming
       filename: '[name].js',
       chunkFilename: '[name].js'
+    },
+    resolve: {
+      alias: {
+        'styles': path.resolve(__dirname, './src/styles/')
+      }
     }
   }
 };

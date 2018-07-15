@@ -1,0 +1,30 @@
+@import '~styles/_global';
+// root styles
+:root {
+    @include font(text, 'Open Sans', Arial, sans-serif);
+    @include color(text, #000);
+    @include font(header, 'Roboto', Helvetica, Arial, Lucida, sans-serif);
+    @include color(header, #00a5ed);
+    @include color(link, #ff6523);
+}
+
+// set base styles
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: color(text);
+    font: {
+        style: font(text);
+    }
+}
+
+@include headings() {
+    color: color(header);
+    font: {
+        style: font(header);
+    }
+}
+
+a {
+    color: color(link);
+}

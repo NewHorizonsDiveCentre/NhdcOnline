@@ -1,0 +1,34 @@
+////////// function //////////
+@function -var($var) {
+    @return var(--nhdc-#{$var});
+}
+
+@function font($name) {
+    @return -var(font-#{$name});
+}
+
+@function color($name) {
+    @return -var(color-#{$name});
+}
+
+////////// mixins //////////
+@mixin var($var, $val...) {
+    --nhdc-#{$var}: #{$val};
+}
+
+@mixin font($name, $val...) {
+    @include var(font-#{$name}, $val);
+}
+
+@mixin color($name, $val...) {
+    @include var(color-#{$name}, $val);
+}
+
+// https://gist.github.com/kenyasullivan/9873263
+@mixin headings($from: 1, $to: 6) {
+    @for $i from $from through $to {
+        h#{$i} {
+            @content
+        }
+    }
+}
