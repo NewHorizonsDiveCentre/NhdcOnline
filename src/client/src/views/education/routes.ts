@@ -1,6 +1,8 @@
+import DefaultEntry from '@/views/_global/DefaultEntry.vue';
+
 export default {
   path: '/education',
-  component: () => import(/* webpackChunkName: "edu" */ './Education.vue'),
+  component: DefaultEntry,
   children: [
     {
       path: '',

@@ -1,6 +1,8 @@
+import DefaultEntry from '@/views/_global/DefaultEntry.vue';
+
 export default {
   path: '/',
-  component: () => import(/* webpackChunkName: "home" */ './Home.vue'),
+  component: DefaultEntry,
   children: [
     {
       path: '',
