@@ -10,6 +10,14 @@
     @include color(nav-no-blur, #fffffff3);
     @include v(nav-height, 7rem);
     @include v(nav-blur, 15px);
+
+    // chota setup
+    --primary-color: #{color(header)};
+    // --lightGrey-color: #ddd;
+    // --darkGrey-color: #888;
+    // --grid-maxWidth: 120rem;
+    // --grid-gutter: 1.5rem;
+    --font-family: #{font(text)};
 }
 
 // set base styles
