@@ -7,7 +7,9 @@
         </router-link>
       </div>
       <div class="nav-right">
-        
+        <router-link :to="{ name: 'home' }" exact>Home</router-link>
+        <router-link :to="{ name: 'home.about' }">About</router-link>
+        <router-link :to="{ name: 'edu' }">Education</router-link>
       </div>
     </div>
   </nav>
