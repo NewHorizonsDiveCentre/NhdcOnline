@@ -1,27 +1,27 @@
 ////////// function //////////
-@function -var($var) {
+@function v($var) {
     @return var(--nhdc-#{$var});
 }
 
 @function font($name) {
-    @return -var(font-#{$name});
+    @return v(font-#{$name});
 }
 
 @function color($name) {
-    @return -var(color-#{$name});
+    @return v(color-#{$name});
 }
 
 ////////// mixins //////////
-@mixin var($var, $val...) {
+@mixin v($var, $val...) {
     --nhdc-#{$var}: #{$val};
 }
 
 @mixin font($name, $val...) {
-    @include var(font-#{$name}, $val);
+    @include v(font-#{$name}, $val);
 }
 
 @mixin color($name, $val...) {
-    @include var(color-#{$name}, $val);
+    @include v(color-#{$name}, $val);
 }
 
 // https://gist.github.com/kenyasullivan/9873263

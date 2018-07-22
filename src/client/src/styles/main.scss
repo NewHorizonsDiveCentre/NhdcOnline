@@ -6,6 +6,10 @@
     @include font(header, 'Roboto', Helvetica, Arial, Lucida, sans-serif);
     @include color(header, #00a5ed);
     @include color(link, #ff6523);
+    @include color(nav-base, #0000);
+    @include color(nav-no-blur, #fffffff3);
+    @include v(nav-height, 7rem);
+    @include v(nav-blur, 15px);
 }
 
 // set base styles
